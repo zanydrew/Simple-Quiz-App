@@ -49,14 +49,14 @@ function saveQuestions() {
 }
 
 // Hide a given element
-function hide(element) {
-  element.style.display = "none";
-  
+function show(element) {
+  element.classList.add("active");
 }
 
-function show(element) {
-  element.style.display = "flex";
+function hide(element) {
+  element.classList.remove("active");
 }
+
 
 function createQuestion() {
   const titleInput = create_question_box.querySelector(".title-input input").value;
@@ -87,10 +87,8 @@ function renderQuestionsList(){
     div.innerHTML = `
       <span>${index + 1}. ${q.title}</span>
       <div class="actions">
-        <button class="edit-btn">📝
-        </button>
-        <button class="delete-btn">🗑️
-        </button>
+        <button class="edit-btn"><i class="fa-solid fa-pen-to-square" style="color: purple;"></i></button>
+        <button class="delete-btn"><i class="fa-solid fa-trash" style="color: purple;"></i></button>
       </div>
     `;
 

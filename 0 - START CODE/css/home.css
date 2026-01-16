@@ -45,8 +45,8 @@ nav {
 }
 
 .nav-links a:hover {
-    color: yellow;
-    text-shadow: 0 0 10px yellow;
+    color:fuchsia;
+    text-shadow: 0 0 10px fuchsia;
 }
 
 .content {
