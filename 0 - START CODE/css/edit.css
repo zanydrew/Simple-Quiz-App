@@ -1,0 +1,116 @@
+
+.edit-container {
+    width: 80%;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+}
+
+/* Add Question Button */
+#add-question-btn {
+    background-color: #800080;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+/* Question List Items */
+.question-item {
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 25px;
+    margin-bottom: 10px;
+    border-radius: 30px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.actions button {
+    background: transparent;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+/* Modal Overlay */
+.modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-overlay :hover{
+    transition: 1s;
+}
+
+/* The Dialog */
+.modal-content { 
+    background: white;
+    margin: 150px;
+    width: 90%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.modal-content :hover{
+    transition: 3s;
+}
+
+.modal-header {
+    background-color: #800080;
+    color: white;
+    padding: 15px;
+    font-size: 20px;
+}
+
+.modal-body {
+    padding: 20px;
+}
+
+.modal-body label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.modal-body input {
+    width: 95%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Footer Buttons */
+.modal-footer {
+    display: flex;
+    justify-content: flex-end;
+    padding: 15px;
+    gap: 10px;
+}
+
+#cancel-btn { 
+    background: #ccc;
+    border: none;
+    padding: 10px; 
+    border-radius: 5px; 
+}
+
+#create-btn { 
+    background: #800080; 
+    color: white; 
+    border: none; 
+    padding: 10px; 
+    border-radius: 5px; 
+}
